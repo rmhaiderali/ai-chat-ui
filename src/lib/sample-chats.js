@@ -117,6 +117,7 @@ export const sampleChats = [
         customComponent: {
           type: "booking-form",
           data: {
+            title: "✂️ Select a Service",
             services: [
               { id: "haircut", name: "Haircut", price: 25, duration: 30 },
               {
@@ -184,12 +185,12 @@ export const sampleChats = [
           "Excellent! I have you down for Thursday, January 18th at 11:30 AM for a Haircut + Beard service. Please provide your contact details to confirm the booking.",
         timestamp: new Date("2024-01-16T11:04:15"),
         customComponent: {
-          type: "confirmation",
+          type: "confirmation-form",
           data: {
-            service: "Haircut + Beard",
+            service: "✂️ Haircut + Beard",
             date: "2024-01-18",
             time: "11:30",
-            price: 35,
+            price: "$ 35",
             duration: 45,
           },
         },

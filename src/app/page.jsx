@@ -118,7 +118,11 @@ export default function ChatPage() {
         </div>
 
         {/* Messages */}
-        <ScrollArea className="flex-1 overflow-hidden" ref={scrollAreaRef}>
+        <ScrollArea
+          className="flex-1 overflow-hidden"
+          ref={scrollAreaRef}
+          id="scrollArea"
+        >
           <div className="space-y-6 mx-auto p-4 max-w-4xl">
             {currentMessages.length === 0 && (
               <div className="py-12 text-center">
